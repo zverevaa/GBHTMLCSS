@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    padding-top: 51px;
+}
+.link {
+    text-decoration: none;
+}
+
+.top-content {
+    margin: 84px 0 162px 0;
+
+}
+
+.hero-text {
+    margin-bottom: 17px;
+}
+
+.top-buttons {
+    margin-top: 37px;
+}
+
+.button {
+    padding: 15px 35px;
+    margin-right: 72px;
+}
+
+.logos {
+    padding: 97px 0;
+    margin-right: 48px;
+}
