@@ -59,15 +59,20 @@
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-width: 600px;
-    font-family: 'Gilroy-Medium', sans-serif;
+    width: 533px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
     font-size: 16px;
 }
 
 .link:first-child {
     color: #F25822;
+}
+
+.arrow-down {
+    padding:8px;
+    background: url('https://api.iconify.design/icon-park-outline/down.svg?width=12') no-repeat center center / contain;
 }
 
 .top-content {
