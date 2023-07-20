@@ -401,7 +401,7 @@ img {
     .categories {
         max-width: 100%;
         grid-template-columns: minmax(150px, 1fr);
-        grid-template-rows: repeat(3, 1fr) 0.425fr ;
+        grid-template-rows: repeat(3, 1fr) 110px;
     }
 
     .category-accessories{
