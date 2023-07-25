@@ -315,7 +315,7 @@ img {
 
 .subscribe {
     background-color: rgba(244, 244, 244, 0.70);
-    background-image: url("../img/bottom-background.jpg");
+    background-image: url("./img/bottom-background.jpg");
     background-size: cover;
 }
 
