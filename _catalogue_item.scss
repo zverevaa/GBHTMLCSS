@@ -1,0 +1,187 @@
+@import 'var';
+
+.breadcrumbs{
+    background-color: #F8F3F4;
+    &-items {
+        @extend .flex-items-center;
+        justify-content: space-between;
+        height: 148px;
+    }
+
+    &-current {
+        color: $maincolor;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+    &-links {
+        color: #636363;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+
+        .new-arrivals {
+            color: $maincolor;
+            font-weight: 700;
+        }
+    }
+
+    &-links>a:not(:last-child)::after {
+        content: '/';
+        margin: 0 5px;
+
+    }
+
+}
+
+.image-slide {
+    background-color: #F7F7F7;
+    &-body {
+        @extend .flex-items-center;
+        justify-content: space-between;
+        height: 777px;
+
+        .arrow {
+            width: 47px;
+            height: 47px;
+            background-color: rgba(42, 42, 42, 0.15);
+            @extend .flex-items-center;
+            justify-content: center;
+            &::after {
+                content:url(./img/arrow_left.svg);
+            }
+            &:hover::after {
+                filter: $maincolorfilter;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &.right::after {
+                transform: rotate(180deg);
+        }
+        }
+    }
+}
+
+.product-description {
+    @extend .flex-items-center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 129px;
+    &-items {
+        padding: 65px;
+        @extend .flex-items-center;
+        flex-direction: column;
+        background-color: #FFF;
+        width: $sitewidth;
+        border: 2px solid #F7F7F7;
+        height: 600px;
+    }
+
+    &-collection {
+        color: $maincolor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+        margin-bottom: 12px;
+
+        &::after {
+            display: block;
+            margin: 0 auto;
+            border-bottom: 3px solid $maincolor;
+            width: 63px;
+            height: 12px;
+            content:"";
+        }
+    }
+
+    &-collection-title {
+        color: #4D4D4D; 
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+        margin-bottom: 50px;
+    }
+
+    &-text {
+        color: #5E5E5E;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+        width: 550px;
+        margin-bottom: 33px;
+    }
+
+    &-price {
+        color: $maincolor;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+    }
+
+    .line {
+        margin: 64px auto;
+        height: 1px;
+        background-color: #EAEAEA;
+        width: 641px;
+    }
+
+    .drop-down {
+        @extend .flex-items-center;
+        color: #6F6E6E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        gap: 42px;
+        margin-bottom: 48px;
+        position: relative;
+
+        & div::after {
+            margin-left: 10px;
+            position: absolute;
+            transform: translateY(-10%);
+            content:url(./img/drop-down.svg);
+        }
+
+        & div:hover {
+            cursor: pointer;
+        }
+    }
+
+    .add-to-cart {
+            width: 212px;
+            height: 48px;
+            @extend .flex-items-center;
+            justify-content: center;
+            border: 1px solid $maincolor;
+            font-size: 1rem;
+            text-align: center;
+            filter: $maincolorfilter;
+            position: relative;
+            transition: all 0.15s;
+
+            &::before {
+                position: absolute;
+                content:url(./img/cart.svg);
+                transform: scale(0.7) translate(-300%, 15%);
+            }
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                cursor: pointer;
+            } 
+    }
+}
+
+.featured-items {
+    margin-bottom: 129px;
+}

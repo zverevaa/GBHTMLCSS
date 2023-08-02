@@ -1,4 +1,5 @@
 @import 'var';
+@import 'catalogue_item';
 @import 'catalogue';
 
 .flex-items-center {
@@ -18,6 +19,9 @@ img {
     max-width: 100%;
 }
 
+a, a:visited {
+    color: inherit;
+}
 
 .container {
     width: $sitewidth;
@@ -178,9 +182,6 @@ img {
             color: #FFF;
         }
 
-        &>a:visited {
-            color: inherit;
-        }
     }
 }
 
