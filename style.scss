@@ -1,6 +1,7 @@
 @import 'var';
 @import 'catalogue_item';
 @import 'catalogue';
+@import 'cart';
 
 .flex-items-center {
     display: flex;
@@ -13,6 +14,8 @@
     text-decoration: none;
     box-sizing:border-box;
     font-family: Lato;
+    font-style: normal;
+    line-height: normal; 
 }
 
 img {
