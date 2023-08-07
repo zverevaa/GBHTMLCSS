@@ -83,8 +83,9 @@
 
     div:hover {
         cursor: pointer;
-        transform: scale(1.1);
-        transition: all 0.15s;
+        color: $maincolor;
+        border: 1px solid $maincolor;
+        transition: all 0.05s;
     }
 
 }
@@ -134,7 +135,6 @@
                 cursor: pointer;
                 color: $maincolor;
                 border-color: $maincolor;
-                
             }
         }
     }

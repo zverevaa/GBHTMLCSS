@@ -415,8 +415,9 @@ summary {
 }
 .shopping-buttons div:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  transition: all 0.15s;
+  color: #F26376;
+  border: 1px solid #F26376;
+  transition: all 0.05s;
 }
 
 .shopping-cart-items-right .shopping-cart-address {
