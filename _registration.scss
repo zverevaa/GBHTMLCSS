@@ -1,0 +1,107 @@
+@import 'var';
+
+.registration {
+    background-color: #FFF;
+
+    &-items {
+        padding-top: 64px;
+        display: flex;
+        gap: 11.2%;
+    }
+
+    &-left {
+        width: $itemwidth;
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    &-name {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-title {
+            color: #222;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    &-gender {
+        @extend .flex-items-center;
+        gap: 20px;
+        .gender {
+            color: #000;
+            font-size: 11px;
+            font-weight: 300;
+        }
+        label {
+            margin-left: 10px;
+        }
+    }
+
+    &-login {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-title {
+            color: #222;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    &-button {
+        @extend .flex-items-center;
+        justify-content: center;
+        gap: 20px;
+        width: 167px;
+        height: 50px;
+        background-color: $maincolor;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 96px;
+        &:hover {
+            cursor: pointer;
+            background-color: #FFF;
+            color: $maincolor;
+            border: 1px solid $maincolor;
+            path {
+                fill: $maincolor;
+            }
+        }
+
+    }
+
+    .text {
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 8px;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 300;
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+        }
+
+        .registration-item::before {
+            width: 20px;
+            height: 16px;
+            margin-right: 23px;
+            content:url(./img/svg-ok.svg);
+        }
+    }
+
+}

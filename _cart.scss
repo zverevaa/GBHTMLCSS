@@ -90,6 +90,13 @@
 
 }
 
+.text-field {
+    width: $itemwidth;
+    height: 45px;
+    padding-left: 16px;
+    border: 1px solid #A4A4A4;
+}
+
 .shopping-cart-items-right {
     .shopping-cart-address {
         display: flex;
@@ -103,13 +110,6 @@
             font-weight: 300;
             line-height: normal; 
         }
-    }
-
-    .text-field {
-        width: $itemwidth;
-        height: 45px;
-        padding-left: 16px;
-        border: 1px solid #A4A4A4;
     }
 
     .postcode {

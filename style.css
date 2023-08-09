@@ -420,6 +420,13 @@ summary {
   transition: all 0.05s;
 }
 
+.text-field {
+  width: 360px;
+  height: 45px;
+  padding-left: 16px;
+  border: 1px solid #A4A4A4;
+}
+
 .shopping-cart-items-right .shopping-cart-address {
   display: flex;
   flex-direction: column;
@@ -432,12 +439,6 @@ summary {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-}
-.shopping-cart-items-right .text-field {
-  width: 360px;
-  height: 45px;
-  padding-left: 16px;
-  border: 1px solid #A4A4A4;
 }
 .shopping-cart-items-right .postcode {
   margin-bottom: 3px;
@@ -505,7 +506,98 @@ summary {
   transition: all 0.05s;
 }
 
-.flex-items-center, footer .socials-icon, footer .socials, footer .footer-items, .subscribe-button, .subscribe-email-form, .subscribe-block, .subscribe .customer, .subscribe-items, .services-item, .item-img .add-to-cart, .featured-items-button, .top .hero-title-group, .top-items, .header .item-amount, .header .navigation, .header-group, .header-items, .header, .breadcrumbs-items, .image-slide-body, .image-slide-body .arrow, .product-description, .product-description-items, .product-description .drop-down, .product-description .add-to-cart, .filter-category-heading, .sort summary, .sort-size-box-content label, .featured-items-pagination, .featured-items-pagination-box, .shopping-buttons {
+.registration {
+  background-color: #FFF;
+}
+.registration-items {
+  padding-top: 64px;
+  display: flex;
+  gap: 11.2%;
+}
+.registration-left {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+.registration-name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration-name-title {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+}
+.registration-gender {
+  gap: 20px;
+}
+.registration-gender .gender {
+  color: #000;
+  font-size: 11px;
+  font-weight: 300;
+}
+.registration-gender label {
+  margin-left: 10px;
+}
+.registration-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration-login-title {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+}
+.registration-button {
+  justify-content: center;
+  gap: 20px;
+  width: 167px;
+  height: 50px;
+  background-color: #F26376;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 96px;
+}
+.registration-button:hover {
+  cursor: pointer;
+  background-color: #FFF;
+  color: #F26376;
+  border: 1px solid #F26376;
+}
+.registration-button:hover path {
+  fill: #F26376;
+}
+.registration .text {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.registration-right {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+}
+.registration-right-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration-right .registration-item::before {
+  width: 20px;
+  height: 16px;
+  margin-right: 23px;
+  content: url(./img/svg-ok.svg);
+}
+
+.flex-items-center, footer .socials-icon, footer .socials, footer .footer-items, .subscribe-button, .subscribe-email-form, .subscribe-block, .subscribe .customer, .subscribe-items, .services-item, .item-img .add-to-cart, .featured-items-button, .top .hero-title-group, .top-items, .header .item-amount, .header .navigation, .header-group, .header-items, .header, .breadcrumbs-items, .image-slide-body, .image-slide-body .arrow, .product-description, .product-description-items, .product-description .drop-down, .product-description .add-to-cart, .filter-category-heading, .sort summary, .sort-size-box-content label, .featured-items-pagination, .featured-items-pagination-box, .shopping-buttons, .registration-gender, .registration-button {
   display: flex;
   align-items: center;
 }
