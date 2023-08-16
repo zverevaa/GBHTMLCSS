@@ -181,7 +181,7 @@ summary {
     @extend .flex-items-center;
     justify-content: center;
     margin-top: 49px;
-    margin-bottom: -20px;
+    margin-bottom: 96px;
     &-box {
         @extend .flex-items-center;
         justify-content: center;
@@ -206,3 +206,24 @@ summary {
         }
     }
 } 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .filter-section {
+        padding-top: 24px;
+        gap: 0;
+        justify-content: space-between;
+        height: 81px;
+    }
+
+    .catalogue-hide-med {
+        display: none;
+    }
+
+    .sort-size-box {
+        bottom: -68px;
+    }
+
+    .featured-items-pagination {
+        margin-bottom: 63px;
+    }
+}

@@ -4,6 +4,7 @@
 @import 'cart';
 @import 'registration';
 
+
 .flex-items-center {
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@
 
 img {
     max-width: 100%;
+    vertical-align: bottom;
 }
 
 a, a:visited {
@@ -133,10 +135,14 @@ a, a:visited {
     gap: 1.875rem;
     line-height: 0;
 
-    .category-accessories {
+    .category-accessories, .category-accessories-tablet {
         grid-row-start: 2;
         grid-column-start: 1;
         grid-column-end: 4;
+    }
+
+    .category-women-tablet, .category-men-tablet, .category-kids-tablet, .category-accessories-tablet {
+        display: none;
     }
 }
 
@@ -156,6 +162,11 @@ a, a:visited {
         margin-bottom: 6px;
     }
 
+    &-text {
+        color: #9F9F9F;
+        font-size: 0.875rem;
+    }
+
     &-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -165,7 +176,7 @@ a, a:visited {
     &-button {
         @extend .flex-items-center;
         justify-content: center;
-        margin: 48px auto 60px auto;
+        margin: 48px auto 95px auto;
         width: 212px;
         height: 48px;
         border: 1px solid $maincolor;
@@ -424,5 +435,117 @@ footer {
             }
         }
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    $sitewidth: 46rem;
+    $itemwidth: 31.5%;
+    .container {
+        width: $sitewidth;
+
+    }
+
+    .header-items {
+        padding: 0 1rem;
+    }
+
+    .top {
+        height: 367px;
+
+        .hero-title-group {
+            margin-left: 1.5rem;
+        }
+
+        .hero-image {
+            margin-left: 0px;
+            height: 367px;
+        }
+
+        .hero-title {
+            font-size: 2.75rem;
+        }
+
+        .hero-text {
+            font-size: 1.5rem;
+        }
+    }
+
+    .categories {
+        margin-top: 20px;
+        gap: 1.25rem;
+        grid-template-rows: 55.31% 40.29%;
+
+        .category-women-tablet, .category-men-tablet, .category-kids-tablet, .category-accessories-tablet {
+            display:inherit;
+        }
+
+        .category-women, .category-men, .category-kids, .category-accessories {
+            display: none;
+        }
+    }
+
+    .featured-items {
+        margin-bottom: 0;
+        &-info {
+            margin-top: 155px;
+        }
+
+        &-title {
+            font-size: 1.875rem;   
+        }
+
+        &-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        &-button {
+            margin: 32px auto 64px auto;
+        }
+    }
+
+    .services {
+        &-items {
+            height: 610px;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            gap: 49px;
+        }
+
+        &-item {
+            width: 42%;
+        }
+
+        &-icon {
+            margin-bottom: 25px;
+        }
+    }
+
+    .subscribe {
+        background-position: 25%;
+        &-items {
+            height: 614px;
+            flex-direction: column;
+            gap: 5rem;
+            justify-content: start;
+            padding: 4rem;
+        }
+
+        .customer {
+            width: 60%;
+        }
+
+        &-block {
+            margin-right: 0;
+        }
+    }
+
+    footer { 
+        .footer-items {
+            padding: 0 1rem;
+        }
+    }
+
 }
 

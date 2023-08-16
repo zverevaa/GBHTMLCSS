@@ -157,6 +157,7 @@
         }
     }
 
+
     .add-to-cart {
             width: 212px;
             height: 48px;
@@ -182,6 +183,30 @@
     }
 }
 
-.featured-items {
-    margin-bottom: 129px;
+.featured-items-margin {
+    margin-bottom: 129px !important;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    $sitewidth: 46rem;
+    $itemwidth: 31.5%;
+    .image-slide-body {
+        height: 624px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .product-description {
+        border-bottom: 2px solid #eaeaea;
+        border-top: 2px solid #eaeaea;
+        margin-top: 0;
+        &-items {
+            width: 100%;
+            border: none;
+        }
+    }
+
 }

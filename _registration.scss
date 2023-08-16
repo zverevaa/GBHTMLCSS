@@ -3,6 +3,7 @@
 .registration {
     background-color: #FFF;
 
+
     &-items {
         padding-top: 64px;
         display: flex;
@@ -95,13 +96,30 @@
             gap: 16px;
             
         }
-
-        .registration-item::before {
+        .registration-item {
+            display: flex;
+            gap: 23px;
+            &::before {
             width: 20px;
             height: 16px;
-            margin-right: 23px;
             content:url(./img/svg-ok.svg);
         }
-    }
+        }
 
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .registration {
+        &-right {
+            font-size: 1rem;
+            &-items {
+                gap: 1.563rem;
+            }
+        }
+        &-items {
+            gap:1.375rem;
+        }
+    }
 }
