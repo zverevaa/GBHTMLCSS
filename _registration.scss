@@ -123,3 +123,41 @@
         }
     }
 }
+
+@media (min-width: 375px) and (max-width: 425px) {
+
+    .registration {
+        &-button {
+            margin-bottom: 40px;
+        }
+        &-items {
+            padding-top: 40px;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+        &-right {
+            font-size: 16px;
+            margin: 0 -8px;
+        }
+
+        &-name {
+            &-title {
+                margin: 0 -8px;
+            }
+        }
+
+        &-login {
+            &-title {
+                margin: 0 -8px;
+            }
+        }
+
+        &-button {
+            margin-left:-8px;
+        }
+    }
+
+    .text {
+        margin: 0 -8px;
+    }
+}

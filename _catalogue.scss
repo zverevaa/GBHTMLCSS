@@ -227,3 +227,38 @@ summary {
         margin-bottom: 63px;
     }
 }
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .filter-section {
+        .filter {
+            position: absolute;
+            margin-left: -8px;
+            &-heading {
+                display: none;
+            }
+
+            &-summary {
+                svg {
+                    width: 37.5px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    .sort {
+        margin-left: 77px;
+        font-size: 12px;
+        gap: 24px;
+    }
+
+    .featured-items {
+        &-grid {
+            gap: 1rem !important;
+        }
+    }
+
+    .catalogue-hide-low {
+        display: none;
+    }
+}
